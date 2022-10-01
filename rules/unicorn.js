@@ -100,7 +100,12 @@ module.exports = {
   ],
   'unicorn/prefer-top-level-await': error,
   'unicorn/prefer-type-error': error,
-  'unicorn/prevent-abbreviations': error,
+  'unicorn/prevent-abbreviations': [
+    error,
+    {
+      checkFilenames: false,
+    },
+  ],
   'unicorn/relative-url-style': error,
   'unicorn/require-array-join-separator': error,
   'unicorn/require-number-to-fixed-digits-argument': error,
