@@ -11,6 +11,7 @@ module.exports = {
     'unicorn',
     'anti-trojan-source',
     'shopify',
+    'no-constructor-bind',
   ],
   rules: {
     ...baseRules,
@@ -18,5 +19,7 @@ module.exports = {
     ...unicornRules,
     'anti-trojan-source/no-bidi': error,
     'shopify/prefer-early-return': error,
+    'no-constructor-bind/no-constructor-bind': error,
+    'no-constructor-bind/no-constructor-state': error,
   },
 };

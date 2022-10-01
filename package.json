@@ -17,6 +17,7 @@
     "eslint": "^8.24.0",
     "eslint-plugin-anti-trojan-source": "^1.1.0",
     "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-no-constructor-bind": "^2.0.4",
     "eslint-plugin-unicorn": "^44.0.0"
   }
 }
