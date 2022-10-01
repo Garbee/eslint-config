@@ -10,11 +10,13 @@ module.exports = {
     'eslint-comments',
     'unicorn',
     'anti-trojan-source',
+    'shopify',
   ],
   rules: {
     ...baseRules,
     ...commentRules,
     ...unicornRules,
     'anti-trojan-source/no-bidi': error,
+    'shopify/prefer-early-return': error,
   },
 };
