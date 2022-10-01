@@ -3,6 +3,7 @@ const baseRules = require('./rules/eslint-base.js');
 const commentRules = require('./rules/eslint-comments.js');
 const unicornRules = require('./rules/unicorn.js');
 const arrayFunctionRules = require('./rules/array-func.js');
+const promiseRules = require('./rules/promise.js');
 
 module.exports = {
   plugins: [
@@ -12,12 +13,14 @@ module.exports = {
     '@shopify/eslint-plugin',
     'no-constructor-bind',
     'array-func',
+    'promise',
   ],
   rules: {
     ...baseRules,
     ...commentRules,
     ...unicornRules,
     ...arrayFunctionRules,
+    ...promiseRules,
     'anti-trojan-source/no-bidi': error,
     '@shopify/prefer-early-return': error,
     'no-constructor-bind/no-constructor-bind': error,
