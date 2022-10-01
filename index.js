@@ -1,10 +1,11 @@
-const {error} = require('./rules/options.js');
+const arrayFunctionRules = require('./rules/array-func.js');
 const baseRules = require('./rules/eslint-base.js');
 const commentRules = require('./rules/eslint-comments.js');
-const unicornRules = require('./rules/unicorn.js');
-const arrayFunctionRules = require('./rules/array-func.js');
+const importRules = require('./rules/import.js');
+const {error} = require('./rules/options.js');
 const promiseRules = require('./rules/promise.js');
 const sonarRules = require('./rules/sonar.js');
+const unicornRules = require('./rules/unicorn.js');
 
 module.exports = {
   plugins: [
@@ -16,6 +17,7 @@ module.exports = {
     'array-func',
     'promise',
     'sonarjs',
+    'import',
   ],
   rules: {
     ...baseRules,
@@ -24,6 +26,7 @@ module.exports = {
     ...arrayFunctionRules,
     ...promiseRules,
     ...sonarRules,
+    ...importRules,
     'anti-trojan-source/no-bidi': error,
     '@shopify/prefer-early-return': error,
     'no-constructor-bind/no-constructor-bind': error,

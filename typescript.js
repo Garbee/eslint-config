@@ -1,5 +1,5 @@
-const baseConfig = require('./index.js');
 const {error} = require('./rules/options.js');
+const baseConfig = require('./index.js');
 
 module.exports = {
   'parser': '@typescript-eslint/parser',
