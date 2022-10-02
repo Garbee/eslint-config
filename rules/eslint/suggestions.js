@@ -1,4 +1,4 @@
-const {error, off} = require('../options.js');
+const {error, off} = require('./options.js');
 
 module.exports = {
   'accessor-pairs': off,

@@ -2,7 +2,7 @@ const {
   error,
   warn,
   off,
-} = require('../options.js');
+} = require('./options.js');
 
 module.exports = {
   'array-callback-return': [

@@ -1,4 +1,4 @@
-const {error} = require('./rules/options.js');
+const {error} = require('./rules/eslint/options.js');
 const baseConfig = require('./index.js');
 
 module.exports = {

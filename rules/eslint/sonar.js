@@ -1,4 +1,4 @@
-const {off, error} = require('./options');
+const {off, error} = require('./options.js');
 
 module.exports = {
   // Bug Detection

@@ -1,11 +1,12 @@
-const arrayFunctionRules = require('./rules/array-func.js');
-const baseRules = require('./rules/eslint-base.js');
-const commentRules = require('./rules/eslint-comments.js');
-const importRules = require('./rules/import.js');
-const {error} = require('./rules/options.js');
-const promiseRules = require('./rules/promise.js');
-const sonarRules = require('./rules/sonar.js');
-const unicornRules = require('./rules/unicorn.js');
+const arrayFunctionRules = require('./rules/eslint/array-func.js');
+const baseRules = require('./rules/eslint/eslint-base.js');
+const commentRules = require('./rules/eslint/eslint-comments.js');
+const importRules = require('./rules/eslint/import.js');
+const {error} = require('./rules/eslint/options.js');
+const promiseRules = require('./rules/eslint/promise.js');
+const sonarRules = require('./rules/eslint/sonar.js');
+const sortClassMembersRules = require('./rules/eslint/sort-class-members.js');
+const unicornRules = require('./rules/eslint/unicorn.js');
 
 module.exports = {
   plugins: [
@@ -18,6 +19,7 @@ module.exports = {
     'promise',
     'sonarjs',
     'import',
+    'sort-class-members',
   ],
   rules: {
     ...baseRules,
@@ -27,6 +29,7 @@ module.exports = {
     ...promiseRules,
     ...sonarRules,
     ...importRules,
+    ...sortClassMembersRules,
     'anti-trojan-source/no-bidi': error,
     '@shopify/prefer-early-return': error,
     'no-constructor-bind/no-constructor-bind': error,

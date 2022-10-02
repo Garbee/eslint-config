@@ -1,4 +1,4 @@
-const {error, off} = require('../options.js');
+const {error, off} = require('./options.js');
 
 const objectCurlyNewlineConfig = {
   multiline: true,

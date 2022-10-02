@@ -1,4 +1,4 @@
-const {error} = require('./options');
+const {error} = require('./options.js');
 
 module.exports = {
   'array-func/from-map': error,
