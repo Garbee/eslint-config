@@ -20,6 +20,7 @@ module.exports = {
     'sonarjs',
     'import',
     'sort-class-members',
+    'woke',
   ],
   rules: {
     ...baseRules,
@@ -30,6 +31,7 @@ module.exports = {
     ...sonarRules,
     ...importRules,
     ...sortClassMembersRules,
+    'woke/all': error,
     'anti-trojan-source/no-bidi': error,
     '@shopify/prefer-early-return': error,
     'no-constructor-bind/no-constructor-bind': error,
